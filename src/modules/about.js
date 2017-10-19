@@ -1,10 +1,11 @@
 export const INCREMENT = 'about/INCREMENT'
 export const DECREMENT = 'about/DECREMENT'
 export const RESET_COUNT = 'about/RESET_COUNT'
-
+export const TOGGLE_DRAWER = 'about/TOGGLE_DRAWER'
 
 const initialState = {
-  count: 0
+  count: 0,
+  isOpen: false
 }
 
 export default (state = initialState, action) => {
@@ -23,6 +24,11 @@ export default (state = initialState, action) => {
         return {
           ...state,
           count: 0
+        }
+      case TOGGLE_DRAWER:
+        return {
+          ...state,
+          isOpen: !this.isOpen
         }
       default:
         return state
@@ -49,6 +55,14 @@ export const resetCount = () => {
   return dispatch => {
     dispatch({
       type: RESET_COUNT
+    })
+  }
+}
+
+export const toggleDrawer = () => {
+  return dispatch => {
+    dispatch({
+      type: TOGGLE_DRAWER
     })
   }
 }
