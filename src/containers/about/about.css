@@ -1,8 +1,10 @@
 .about {
-  text-align: center; }
+  text-align: center;
+  animation: fadeIn linear 2s; }
 
 .about__header {
-  color: black; }
+  color: black;
+  animation: fadeIn linear 2s; }
 
 .about__image {
   cursor: pointer;

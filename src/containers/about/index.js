@@ -24,7 +24,7 @@ class About extends React.Component {
   render(){
     const images = [image1, image2, image3];
     return (
-      <div className='about'>
+      <div className='about animated pulse'>
         <h1 className='about__header'>About</h1>
         <p className='about__description'>You should click me!</p>
         <img

@@ -18,7 +18,8 @@ html {
   display: inline;
   font-size: 20px;
   color: white;
-  margin-right: 2em; }
+  margin-right: 2em;
+  text-decoration: none; }
 
 .header__link {
   text-decoration: none;

@@ -1,16 +1,22 @@
 import React from 'react';
-import { Route, NavLink, withRouter } from 'react-router-dom'
+import { Route, NavLink, withRouter, Link } from 'react-router-dom'
+import { push } from 'react-router-redux'
 import Home from '../home'
 import About from '../about'
 import './app.css';
 
 class App extends React.Component {
+
   render() {
-    console.log(this.props);
     return (
       <div>
         <header className='header'>
-          <h1 className='header__header'>Quiggly</h1>
+          <Link
+            className='header__header'
+            to='/home'
+          >
+            Quiggly
+          </Link>
           <div className='header__wrapper'>
             <NavLink
               to="/home"
